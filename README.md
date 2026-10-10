@@ -2,19 +2,19 @@
 
 ## Context
 
-An enterprise-scale renewable fleet analytics platform (GenE + OpsReport) had been built and adopted internally — 700+ sites, 300+ daily active users, system of record for $2.4B in annual generation revenue. The platform solved a problem that every renewable asset owner faces: classifying why generation fell below expectations and connecting those classifications to financial accountability.
+An enterprise-scale renewable fleet analytics platform (GenE + OpsReport) had been built and adopted internally: 700+ sites, 300+ daily active users, system of record for $2.4B in annual generation revenue. The platform solved a problem that every renewable asset owner faces: classifying why generation fell below expectations and connecting those classifications to financial accountability.
 
 The question: could this become an external product?
 
 ## My Role
 
-Senior Product Manager — I identified the commercialization opportunity, built the business case, defined the product strategy for external customers, and drove the initial GTM framework. This was not assigned to me — I saw the opportunity and made the case.
+Senior Product Manager. I identified the commercialization opportunity, built the business case, defined the product strategy for external customers, and drove the initial GTM framework. This was not assigned to me. I saw the opportunity and made the case.
 
 ## The Opportunity
 
 ### Why This Product Has External Value
 
-Every renewable energy operator — not just our company — faces the same problem:
+Every renewable energy operator, not just our company, faces the same problem:
 - Solar and wind assets underperform their theoretical output
 - The gap between expected and actual generation represents lost revenue
 - Classifying why losses occurred (curtailment, equipment fault, degradation, soiling, weather) determines the financial and operational response
@@ -43,18 +43,18 @@ Our platform already does this at scale: 10,000+ per-device ML models, automated
 
 ### Value Proposition to External Customers
 
-"You're leaving money on the table every day your fleet operates without automated loss classification. Our platform processes billions of telemetry data points across your entire portfolio and tells you exactly where generation is being lost, why, and what it's worth — automatically, continuously, and at a granularity your current tools can't match."
+"You're leaving money on the table every day your fleet operates without automated loss classification. Our platform processes billions of telemetry data points across your entire portfolio and tells you exactly where generation is being lost, why, and what it's worth: automatically, continuously, and at a granularity your current tools can't match."
 
 ### What Had to Be True
 
 For commercialization to work, several conditions needed to be met:
 
-1. **Multi-tenancy** — Data isolation between customers, configurable per-tenant. (Already built for internal business unit separation.)
-2. **Self-service onboarding** — New sites provisioned without custom engineering. (Partially exists — site configuration is semi-automated.)
-3. **GCP hosting** — Enterprise SaaS customers expect cloud-native. (Migration already underway.)
-4. **Configurable OpAs** — Each customer's operational assumptions differ. (Framework exists; needs UI for external admin.)
-5. **Pricing model** — Value-based pricing tied to fleet size and recovered revenue. (New; required market research.)
-6. **Support model** — Cannot scale support with the internal team. (Requires self-serve documentation, tiered support.)
+1. **Multi-tenancy**: Data isolation between customers, configurable per-tenant. (Already built for internal business unit separation.)
+2. **Self-service onboarding**: New sites provisioned without custom engineering. (Partially exists: site configuration is semi-automated.)
+3. **GCP hosting**: Enterprise SaaS customers expect cloud-native. (Migration already underway.)
+4. **Configurable OpAs**: Each customer's operational assumptions differ. (Framework exists; needs UI for external admin.)
+5. **Pricing model**: Value-based pricing tied to fleet size and recovered revenue. (New; required market research.)
+6. **Support model**: Cannot scale support with the internal team. (Requires self-serve documentation, tiered support.)
 
 ## Key Decisions
 
@@ -74,7 +74,7 @@ For commercialization to work, several conditions needed to be met:
 
 **Decision:** Align the SaaS launch with the Google Cloud partnership from the GCP migration.
 
-**Rationale:** Google has existing relationships with energy companies and an active co-selling program. Being a GCP-native energy analytics SaaS aligns us with their GTM motion, provides marketplace visibility, and potentially unlocks co-marketing budget. The GCP migration was already justified on cost savings ($96K/yr) — SaaS revenue is an additional upside.
+**Rationale:** Google has existing relationships with energy companies and an active co-selling program. Being a GCP-native energy analytics SaaS aligns us with their GTM motion, provides marketplace visibility, and potentially unlocks co-marketing budget. The GCP migration was already justified on cost savings ($96K/yr): SaaS revenue is an additional upside.
 
 ### Don't Fork the Codebase
 
@@ -86,24 +86,24 @@ For commercialization to work, several conditions needed to be met:
 
 | Challenge | How I Addressed It |
 |----------|-------------------|
-| **IP concerns** — Is the company willing to expose internal capability externally? | Built the business case showing revenue potential. Positioned as "monetizing an existing asset" not "giving away secrets." The algorithms are the value, not the implementation details. |
-| **Support burden** — Internal users have direct access to the engineering team. External users can't. | Proposed tiered support model: self-serve docs + community for base tier, dedicated CSM for enterprise tier. Required investment in documentation and monitoring. |
-| **Data sensitivity** — External customers' generation data is commercially sensitive. | Multi-tenant architecture with strict data isolation already exists. Added tenant-level encryption and audit logging requirements to the roadmap. |
-| **Regulatory** — Some generation data may have contractual restrictions on third-party hosting. | Proposed compliance review as a gating milestone before external launch. Identified customer contract templates that address data hosting. |
-| **Cannibalization fear** — "If competitors use our tool, does it reduce our competitive advantage?" | Our advantage is in operating the assets, not in the monitoring software. Better fleet analytics across the industry actually increases market transparency, which benefits the largest operator. |
+| **IP concerns**: Is the company willing to expose internal capability externally? | Built the business case showing revenue potential. Positioned as "monetizing an existing asset" not "giving away secrets." The algorithms are the value, not the implementation details. |
+| **Support burden**: Internal users have direct access to the engineering team. External users can't. | Proposed tiered support model: self-serve docs + community for base tier, dedicated CSM for enterprise tier. Required investment in documentation and monitoring. |
+| **Data sensitivity**: External customers' generation data is commercially sensitive. | Multi-tenant architecture with strict data isolation already exists. Added tenant-level encryption and audit logging requirements to the roadmap. |
+| **Regulatory**: Some generation data may have contractual restrictions on third-party hosting. | Proposed compliance review as a gating milestone before external launch. Identified customer contract templates that address data hosting. |
+| **Cannibalization fear**: "If competitors use our tool, does it reduce our competitive advantage?" | Our advantage is in operating the assets, not in the monitoring software. Better fleet analytics across the industry actually increases market transparency, which benefits the largest operator. |
 
 ## What This Demonstrates
 
 ### Business Model Innovation
-This is the single strongest "Principal PM" signal in my portfolio. A Senior PM ships features. A Principal PM creates businesses. Identifying that an internal operations tool could become an external revenue stream — and building the case for it — is a fundamentally different kind of product thinking.
+This is the single strongest "Principal PM" signal in my portfolio. A Senior PM ships features. A Principal PM creates businesses. Identifying that an internal operations tool could become an external revenue stream, and building the case for it, is a fundamentally different kind of product thinking.
 
 ### Strategic Thinking at Company Level
 The decision to commercialize touches:
-- **Revenue** — new revenue line for a Fortune 200 company
-- **Cloud strategy** — justifies GCP migration beyond internal cost savings
-- **Competitive positioning** — transforms a cost center into a market-facing product
-- **Partnership** — creates Google co-selling opportunity
-- **Talent** — "we build products that compete in the market" is a stronger recruiting pitch than "we build internal tools"
+- **Revenue**: new revenue line for a Fortune 200 company
+- **Cloud strategy**: justifies GCP migration beyond internal cost savings
+- **Competitive positioning**: transforms a cost center into a market-facing product
+- **Partnership**: creates Google co-selling opportunity
+- **Talent**: "we build products that compete in the market" is a stronger recruiting pitch than "we build internal tools"
 
 ### Architecture Foresight
 The multi-tenant architecture, configurable OpAs framework, and GCP migration were originally justified on internal grounds. But they're also exactly what's needed for SaaS commercialization. Whether this was foresight or fortunate design, the architecture supports the business model transition without re-engineering.
